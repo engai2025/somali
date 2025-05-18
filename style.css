@@ -1,0 +1,113 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navigation Container */
+.nav_container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Nav Bar */
+.nav_bar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: orangered;
+}
+
+/* Links */
+.navigation_bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links li a {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.links li a:hover {
+  color: orange;
+}
+
+/* CDN Icons and Button */
+.cdn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cdn i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.cdn i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.cdn button {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
